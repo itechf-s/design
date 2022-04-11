@@ -69,3 +69,9 @@ src/index.html
 ## Tutorial
 
 [Tailwind CSS tutorial](https://themesberg.com/blog/tailwind-css/tutorial)
+
+
+# Second Way
+
+
+npm install -D tailwindcss postcss autoprefixer
