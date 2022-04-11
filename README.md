@@ -1,77 +1,49 @@
-# design
-All type of itechf design
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-# Tailwind Css Setup
+## Getting Started
 
-## Install Tailwind CSS
-Install tailwindcss via npm, and create your tailwind.config.js file.
+First, run the development server:
 
-Terminal
-
-```
-npm install -D tailwindcss
-npx tailwindcss init
-```
-## Configure your template paths
-Add the paths to all of your template files in your tailwind.config.js file.
-
-tailwind.config.js
-
-```
-module.exports = {
-  content: ["./src/**/*.{html,js}"],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
+```bash
+npm run dev
+# or
+yarn dev
 ```
 
-## Add the Tailwind directives to your CSS
-Add the @tailwind directives for each of Tailwind’s layers to your main CSS file.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-src/input.css
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Second Time Run
+Command to run project
+
+### Run one time only
 
 ```
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+yarn install
 ```
 
-## Start the Tailwind CLI build process
-Run the CLI tool to scan your template files for classes and build your CSS.
-
-Terminal
-```
-npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
-```
-
-## Start using Tailwind in your HTML
-Add your compiled CSS file to the <head> and start using Tailwind’s utility classes to style your content.
-
-src/index.html
+### Run every time
 
 ```
-<!doctype html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="/dist/output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
-</html>
+yarn dev
 ```
-## Tutorial
-
-[Tailwind CSS tutorial](https://themesberg.com/blog/tailwind-css/tutorial)
-
-
-# Second Way
-
-
-npm install -D tailwindcss postcss autoprefixer
